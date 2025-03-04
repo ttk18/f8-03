@@ -95,9 +95,69 @@
         <title>Shine smile</title>
     </head>
     <body>
-        <header>
+        <div class="header-menu-tablet-mobile">
+            <input
+                type="checkbox"
+                class="checkbox-show-menu"
+                name=""
+                id="checkbox-show-menu"
+                hidden
+            />
+
+            <label for="checkbox-show-menu" class="overlay"></label>
+
+            <div class="menu-tablet-mobile">
+                <a href="#!">
+                    <div class="logo">
+                        <div class="logo__circle"></div>
+                        <div class="logo__text">
+                            <div class="logo__text-large">shine</div>
+                            <div class="logo__text-smail">smile</div>
+                        </div>
+                    </div>
+                </a>
+                <ul class="menu-tablet-mobile__navbar">
+                    <li class="navbar__link">
+                        <a href="#!" class="navbar__item navbar__item--acctive"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="navbar__link">
+                        <a href="#!" class="navbar__item">Services</a>
+                    </li>
+                    <li class="navbar__link">
+                        <a href="#!" class="navbar__item">About</a>
+                    </li>
+                    <li class="navbar__link">
+                        <a href="#!" class="navbar__item">Doctors</a>
+                    </li>
+                    <li class="navbar__link hide-on-tablet-pc separator-top">
+                        <a href="#!" class="navbar__item">Sign in</a>
+                    </li>
+                    <li class="navbar__link hide-on-tablet-pc">
+                        <a href="#!" class="navbar__item">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <header class="header-menu">
             <div class="container">
                 <div class="header-top">
+                    <!-- Menu Tablet -->
+                    <label for="checkbox-show-menu" class="label-show-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            class="bi bi-list"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill="currentColor"
+                                fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                            />
+                        </svg>
+                    </label>
                     <!-- Logo -->
                     <a href="#!">
                         <div class="logo">
@@ -129,12 +189,20 @@
                     </ul>
                     <!-- Action -->
                     <div class="header-action">
-                        <a href="#!" class="header-action__login">Log In</a
-                        ><button href="#!" class="header-action_signup btn">
+                        <a href="#!" class="header-action__login hide-on-mobile"
+                            >Log In</a
+                        ><button
+                            href="#!"
+                            class="header-action_signup btn hide-on-mobile"
+                        >
                             Sign Up
                         </button>
                     </div>
                 </div>
+            </div>
+        </header>
+        <header>
+            <div class="container">
                 <!-- Hero -->
                 <section class="hero">
                     <div class="hero__content">
@@ -561,7 +629,7 @@
                         <div class="list-news">
                             <!-- news 1 -->
                             <div class="news-item">
-                                <a href="$!">
+                                <a href="#!">
                                     <figure class="news_img">
                                         <img
                                             src="./assets/img/news-1.png"
@@ -586,7 +654,7 @@
                             </div>
                             <!-- news 2 -->
                             <div class="news-item">
-                                <a href="$!">
+                                <a href="#!">
                                     <figure class="news_img">
                                         <img
                                             src="./assets/img/news-2.png"
